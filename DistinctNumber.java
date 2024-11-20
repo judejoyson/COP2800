@@ -21,7 +21,7 @@ public class DistinctNumber {
 
 	public static int[] eliminateDuplicates(int[] list) {
 		int[] distinctList = new int[list.length];
-		int i = 0;	// index distinctList
+		int i = 0;
 		for (int e: list) {
 			if (linearSearch(distinctList, e) == -1) {
 				distinctList[i] = e;
