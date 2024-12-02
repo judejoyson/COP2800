@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Vowel_Or_Consonant {
     public static void main(String[] args) throws Exception {
-        System.out.println("This program will check whether a later is a vowel or a constant");
+        System.out.println("This program will check whether a letter is a vowel or a consonant");
         Scanner user = new Scanner(System.in);
         System.out.println("Please enter your letter");
         String charachter = user.nextLine().toUpperCase();
@@ -22,7 +22,11 @@ public class Vowel_Or_Consonant {
 		}
 		else
 			System.out.println(ch + " is an invalid input");
-
+			if (charachter.length() != 1)
+			{ System.out.println("Invalid input. Please enter only one letter."); 
+			 return;
+			}
+			user.close();
 
     }
 }
